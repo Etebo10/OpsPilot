@@ -1,0 +1,44 @@
+# Environment / secrets
+.env
+.env.*
+!.env.example
+
+# Local development
+.phpunit.result.cache
+.phpunit.cache/
+vendor/
+
+# IDE
+.vscode/
+.idea/
+
+# Operating system
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs
+*.log
+logs/
+
+# Temporary files
+*.tmp
+*.temp
+
+# Local storage
+storage/logs/
+storage/cache/
+
+# OS / editor backups
+*.swp
+*.swo
+*~
+
+# Local database dumps
+*.sql.bak
+*.dump
+
+# Archives
+*.zip
+*.rar
+*.7z

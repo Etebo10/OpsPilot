@@ -1,0 +1,15 @@
+# This folder should live outside your public/ web root (that's
+# already how these files are laid out). This file is just an extra
+# safety net -- if it's ever misconfigured to be reachable directly,
+# Apache still refuses to serve anything from it.
+
+# Apache 2.4 (what XAMPP ships)
+<IfModule mod_authz_core.c>
+    Require all denied
+</IfModule>
+
+# Apache 2.2 fallback
+<IfModule !mod_authz_core.c>
+    Order deny,allow
+    Deny from all
+</IfModule>
